@@ -7,7 +7,7 @@ namespace UnityEngine.UI.Extensions
 {
     public static class uGUITools
     {
-        [MenuItem("Tools/uGUI/Anchors to Corners %[")]
+        [MenuItem("JonN-Tools/uGUI/Anchors to Corners %[")]
         static void AnchorsToCorners()
         {
             foreach (Transform transform in Selection.transforms)
@@ -28,7 +28,7 @@ namespace UnityEngine.UI.Extensions
             }
         }
 
-        [MenuItem("Tools/uGUI/Corners to Anchors %]")]
+        [MenuItem("JonN-Tools/uGUI/Corners to Anchors %]")]
         static void CornersToAnchors()
         {
             foreach (Transform transform in Selection.transforms)
@@ -41,13 +41,13 @@ namespace UnityEngine.UI.Extensions
             }
         }
 
-        [MenuItem("Tools/uGUI/Mirror Horizontally Around Anchors %;")]
+        [MenuItem("JonN-Tools/uGUI/Mirror Horizontally Around Anchors %;")]
         static void MirrorHorizontallyAnchors()
         {
             MirrorHorizontally(false);
         }
 
-        [MenuItem("Tools/uGUI/Mirror Horizontally Around Parent Center %:")]
+        [MenuItem("JonN-Tools/uGUI/Mirror Horizontally Around Parent Center %:")]
         static void MirrorHorizontallyParent()
         {
             MirrorHorizontally(true);
@@ -77,13 +77,13 @@ namespace UnityEngine.UI.Extensions
             }
         }
 
-        [MenuItem("Tools/uGUI/Mirror Vertically Around Anchors %'")]
+        [MenuItem("JonN-Tools/uGUI/Mirror Vertically Around Anchors %'")]
         static void MirrorVerticallyAnchors()
         {
             MirrorVertically(false);
         }
 
-        [MenuItem("Tools/uGUI/Mirror Vertically Around Parent Center %\"")]
+        [MenuItem("JonN-Tools/uGUI/Mirror Vertically Around Parent Center %\"")]
         static void MirrorVerticallyParent()
         {
             MirrorVertically(true);
