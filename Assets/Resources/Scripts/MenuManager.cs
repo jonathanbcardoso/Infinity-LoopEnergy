@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 
+/// MenuManager.cs
 public class MenuManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -8,15 +10,18 @@ public class MenuManager : MonoBehaviour
         this.gameObject.SetActive(true);
     }
 
-    public void OpenChallenges()
+    public void ClickOpenPuzzles()
     {
-        //Deactivate the Menu
+        //Deactivate menu and open puzzle;
+        this.transform.GetChild(0).GetComponent<Animation>().Play();
+        StartCoroutine(this.ClickOpenPuzzles(0.5f));
+    }
+
+    public IEnumerator ClickOpenPuzzles(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
         this.gameObject.SetActive(false);
         FindFirstObjectByType<PuzzleManager>().LoadPuzzle();
     }
-
-    //private IEnumerator OpenLoadScreen(float seconds)
-    //{
-
-    //}
 }

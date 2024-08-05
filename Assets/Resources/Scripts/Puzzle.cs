@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 /// Puzzle.cs
@@ -7,8 +8,11 @@ public class Puzzle : MonoBehaviour
 {
     [SerializeField] private List<GameObject> pieces;
     [SerializeField] private List<bool> piecesDone;
+    [SerializeField] private Color32 piecesColor;
+    [SerializeField] private Color32 piecesColorDefault;
     private System.Random randomN = new System.Random();
 
+    // Start is called before the first frame update
     private void Start()
     {
         //Fill lists 
@@ -36,16 +40,21 @@ public class Puzzle : MonoBehaviour
     public void RotatePiece(int index)
     {
         //Rotate pieces and check if it's the correct position
-        if (this.CheckRotationDone(index) == false)
-        {
-            pieces[index].transform.eulerAngles = new Vector3(0, 0, pieces[index].transform.eulerAngles.z + 90); /// o_O
 
-            if (this.CheckRotationDone(index) == true)
-            {
-                piecesDone[index] = true;
-                //do animations and sounds here  
-                this.CheckPuzzleCompletion();
-            }
+        pieces[index].transform.eulerAngles = new Vector3(0, 0, pieces[index].transform.eulerAngles.z + 90); /// o_O
+        piecesDone[index] = false;
+
+        if (this.CheckRotationDone(index) == true)
+        {
+            //if piece is done, change the collor to highlight the piece
+            pieces[index].GetComponent<SpriteRenderer>().color = piecesColor;
+            piecesDone[index] = true;
+            this.CheckPuzzleCompletion();
+        }
+        else
+        {
+            //if piece is not done, change the collor to default collor
+            pieces[index].GetComponent<SpriteRenderer>().color = piecesColorDefault;
         }
     }
 
@@ -67,6 +76,7 @@ public class Puzzle : MonoBehaviour
         for (int i = 0; i < pieces.Count; i++)
         {
             //Shuffle the initial position of the pieces
+            pieces[i].GetComponent<SpriteRenderer>().color = piecesColorDefault;
             pieces[i].transform.Rotate(0, 0, 90f * randomN.Next(1, 3));
 
             if (this.CheckRotationDone(i) == true)
