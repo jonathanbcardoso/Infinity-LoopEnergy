@@ -7,7 +7,6 @@ Features:
 - Levels menu: Locked and unlocked stages.
 - High responsiveness to inputs.
 - Particle effects, camera shake, etc. for enhancing player experience.
-- Prepared for Android.
 - Sound effects for the UI and game mechanics.
 - Animations for UI.
 - Responsive UI using unity canvas.
