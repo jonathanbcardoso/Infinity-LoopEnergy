@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b296327f32461d243b3be1508ecc82ce
+guid: 2d2b642c01f097d4baad305c85f6c766
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2722443065206118784
-    second: Star-Sky V1.0_0
+      213: -2085601615658053885
+    second: FPS_ICON_0
+  - first:
+      213: 6034157703646521704
+    second: FPS_ICON_1
+  - first:
+      213: -3349594326744474617
+    second: FPS_ICON_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,11 +78,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 72
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -98,14 +104,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 50
+    textureFormat: -1
     textureCompression: 1
-    compressionQuality: 100
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Star-Sky V1.0_0
+      name: FPS_ICON_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1011
-        height: 556
+        width: 39
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +159,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08916de2b8f08c520800000000000000
-      internalID: 2722443065206118784
+      spriteID: 30f88bb61647e03e0800000000000000
+      internalID: -2085601615658053885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FPS_ICON_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869a98c0672adb350800000000000000
+      internalID: 6034157703646521704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FPS_ICON_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c5bbce4b9d381d0800000000000000
+      internalID: -3349594326744474617
       vertices: []
       indices: 
       edges: []
@@ -162,7 +210,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -170,7 +218,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Star-Sky V1.0_0: 2722443065206118784
+      FPS_ICON_0: -2085601615658053885
+      FPS_ICON_1: 6034157703646521704
+      FPS_ICON_2: -3349594326744474617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

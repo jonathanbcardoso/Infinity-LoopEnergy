@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ScoreBar : MonoBehaviour
 {
     [SerializeField] private Image imgScoreBar;
-    [SerializeField] private Image imgScoreBarBKG;
     [SerializeField] private TextMeshProUGUI txtScoreIncreased;
     [SerializeField] private float slowFillBar = 2;
     [NonSerialized] private readonly float fillScoreBar = 100f;
@@ -16,10 +15,6 @@ public class ScoreBar : MonoBehaviour
 
     public void Start()
     {
-        //Load image Bars 
-        if (GameObject.FindWithTag("ScoreBar_BKG") != null)
-            imgScoreBarBKG = GameObject.FindWithTag("ScoreBar_BKG").GetComponent<Image>();
-
         if (GameObject.FindWithTag("ScoreBar") != null)
             imgScoreBar = GameObject.FindWithTag("ScoreBar").GetComponent<Image>();
     }

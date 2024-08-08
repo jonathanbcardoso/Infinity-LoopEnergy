@@ -9,16 +9,19 @@ using UnityEngine.UI;
 /// PuzzleManager.cs
 public class PuzzleManager : MonoBehaviour
 {
+    [Header("                               ==== Puzzle ====")]
     [SerializeField] private List<GameObject> puzzleList;
     [SerializeField] private int activePuzzle;
     [SerializeField] private int playerScore;
+    [Header("                               ==== UI ====")]
     [SerializeField] private TextMeshProUGUI txtCurrentLevel;
     [SerializeField] private TextMeshProUGUI txtPlayerScore;
     [SerializeField] private Button btnNextPuzzle;
     [SerializeField] private Button btnPrevPuzzle;
     [SerializeField] private GameObject panelConfig;
+    [SerializeField] private GameObject panelScoreBar;
     [SerializeField] private GameObject particleEffectPuzzleCompleted;
-    [SerializeField] private GameObject panelScore;
+
     [NonSerialized] private List<int> completedPuzzles;
     [NonSerialized] private bool animationDone;
     [NonSerialized] private int lastUnlockedLevel;
@@ -120,7 +123,7 @@ public class PuzzleManager : MonoBehaviour
     {
         //When puzzle is completed, Freeze all pieces, when all animations are done, go the next puzzle (if avaiable more puzzles)
         yield return new WaitForSeconds(seconds);
-        panelScore.SetActive(false);
+        panelScoreBar.SetActive(false);
         puzzleList[activePuzzle].GetComponent<Puzzle>().FreezeAllPieces();
         this.NextPuzzle();
         animationDone = true;
@@ -131,7 +134,7 @@ public class PuzzleManager : MonoBehaviour
     {
         //Show Score Bar 0 to 100
         yield return new WaitForSeconds(seconds);
-        panelScore.SetActive(true);
+        panelScoreBar.SetActive(true);
     }
 
     private void NextPuzzle()

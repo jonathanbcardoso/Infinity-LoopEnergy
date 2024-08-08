@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b296327f32461d243b3be1508ecc82ce
+guid: 89b148dcbc5cbda4b9ec68b82302ed68
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2722443065206118784
-    second: Star-Sky V1.0_0
+      213: 6398218305230085572
+    second: SPACE_SKY_ICON_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,14 +98,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 50
+    textureFormat: -1
     textureCompression: 1
-    compressionQuality: 100
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Star-Sky V1.0_0
+      name: SPACE_SKY_ICON_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1011
-        height: 556
+        width: 86
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08916de2b8f08c520800000000000000
-      internalID: 2722443065206118784
+      spriteID: 4cd14ae36a90bc850800000000000000
+      internalID: 6398218305230085572
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Star-Sky V1.0_0: 2722443065206118784
+      SPACE_SKY_ICON_0: 6398218305230085572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
