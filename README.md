@@ -3,6 +3,7 @@ Game Mechanics:
 - Neon animations and sounds are played when connecting the correct nodes.
 
 Features:
+- FPS Options (15,30,60).
 - Level progress and score saving.
 - Levels menu: Locked and unlocked stages.
 - High responsiveness to inputs.
